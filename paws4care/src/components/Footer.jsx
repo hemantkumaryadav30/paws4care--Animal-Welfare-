@@ -1,12 +1,25 @@
 import { FaEnvelope, FaGlobe } from "react-icons/fa";
 import footerlogo from "../assets/paws4carelogo.png";
 import { FaLocationDot } from "react-icons/fa6";
+import { Link } from "react-router-dom";
 export default function Footer() {
   return (
-    <div className="w-auto h-auto md:pb-2 bg-gradient-to-b from-black via-violet-700 to-violet-900">
-        <h3 className="text-white text-[1.5rem] px-3 text-center md:text-[2.5rem] md:px-16">
-Until one has loved an animal, a part of one's soul remains unawakened." - Anatole France</h3>
-<hr />
+    <div className="w-auto h-auto  md:pb-2 bg-[#0c051c]">
+         <div className="w-[300px]   md:flex items-center justify-between mx-auto py-14 md:w-[1140px]">
+
+         <div className="w-[300px] border-l-8 border-b-violet-500 pl-3 md:w-[800px] space-y-2 mx-auto ">
+        <h3 className="text-white text-[1.5rem]  md:text-[2.5rem] font-semibold " style={{fontFamily:"'manrope', sans-serif"}}>
+
+        SUPPORT OUR CAMPAIGNS LOCALLY</h3>
+        <p className="text-white text-[1.2rem]" style={{fontFamily:"'manrope', sans-serif"}}>Join Paws4Care’s Action Team to hear about protests, events, and {<br className="hidden md:block"/>} volunteer opportunities  in your area. You’ll also get tips and ideas {<br className="hidden md:block"/>} to help you advocate for animals.</p>
+        </div>
+
+        <div className="w-[200px] mx-auto ">
+         <button className="w-[200px] h-12 bg-violet-400 rounded-lg text-white">Join Today!</button>
+
+        </div>
+      </div>
+<hr className="hidden md:block" />
         <div className="w-[300px] md:mt-14 h-auto md:flex md:justify-between md:w-[1140px] mx-auto">
 
             <div className=" ">
@@ -17,10 +30,10 @@ Until one has loved an animal, a part of one's soul remains unawakened." - Anato
                 <h3 className="text-white text-[1.4rem] font-semibold">Quick Links</h3>
 
                  <ul className="mt-4">
-                    <li className="text-white my-2">Home</li>
-                    <li className="text-white my-2">Animal Welfare</li>
-                    <li className="text-white my-2">About us</li>
-                    <li className="text-white my-2">Contact Us</li>
+                 <Link to="/">   <li className="text-white my-2 hover:translate-x-2 transition-transform">Home</li> </Link>
+                  <Link to="/animal-care"> <li className="text-white hover:translate-x-2 transition-transform my-2">Animal Welfare</li> </Link>
+                  <Link to="/about-us"> <li className="text-white hover:translate-x-2 transition-transform my-2">About us</li> </Link>
+                   <Link to="/contact-us"> <li className="text-white hover:translate-x-2 transition-transform my-2">Contact Us</li> </Link>
                  </ul>
             </div>
             <div>
@@ -51,7 +64,7 @@ Until one has loved an animal, a part of one's soul remains unawakened." - Anato
             <li className="text-white font-semibold border p-2  rounded-lg md:border-t-0 md:border-l-0 md:border-r-0">Refund Policy</li>
          </ul>
         </div>
-        <hr />
+ 
         <p className="text-white text-center">Copyright©2024.All Rights Reserved.PAWS4CARE</p>
 
     </div>
