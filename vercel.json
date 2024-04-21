@@ -1,0 +1,12 @@
+{
+    "version": 2,
+    "builds": [
+      { "src": "server.js", "use": "@vercel/node" }, 
+      { "src": "paws4care/package.json", "use": "@vercel/static-build", "config": { "distDir": "paws4care/build" } } 
+    ],
+    "routes": [
+      { "src": "/api/.*", "dest": "server.js" },
+      { "src": "/(.*)", "dest": "paws4care/build/$1" }
+    ]
+  }
+  
