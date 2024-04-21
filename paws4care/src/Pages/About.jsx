@@ -21,15 +21,15 @@ export default function About() {
       <div className="w-auto py-11 h-auto">
         <div className="w-[300px] md:w-[1140px] md:flex md:gap-10 items-center h-auto mx-auto">
           {/* first card */}
-          <div>
+          <div className="md:flex-1">
             <img
-              src=""
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQg-ic487rrPcz7vQpe6yj2ryXG9XH8nu640w&s"
               alt=""
               className="w-[300px] h-[300px] md:w-[500px] md:h-[500px] border-2 border-black rounded-lg"
             />
           </div>
 
-          <div className="">
+          <div className="md:flex-1">
             <p className="text-violet-600 text-[1.3rem]">About</p>
             <h2
               className="text-[2rem] md:text-[3rem] font-semibold"
@@ -38,7 +38,7 @@ export default function About() {
               Enhancing Animal Welfare, One Paw at a Time
             </h2>
             <p
-              className="text-[1.2rem] mt-5"
+              className=" md:text-[1.2rem] mt-5"
               style={{ fontFamily: "'manrope', sans-serif" }}
             >
               Welcome to Paws4care, where we are dedicated to promoting animal
@@ -56,14 +56,14 @@ export default function About() {
 
       {/* third section */}
       <div className="w-auto py-11  h-auto ">
-        <div className="w-[300px] md:w-[1140px] md:flex md:justify-between items-center h-auto mx-auto ">
+        <div className="w-[300px] md:w-[1140px] space-y-8 md:space-y-0 md:flex md:justify-between items-center h-auto mx-auto ">
           {/* first card */}
           <div className="bg-[#0c051c] rounded-lg p-5 md:w-[500px] w-[300px]">
             <h2 className="text-[2rem] text-center md:text-[2.5rem] text-white">
               Our Mission
             </h2>
             <img
-              src=""
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCS-5Rg1Npse2dKFJw5q2BCvh6Qw15uttskARO7aw6Eg&s"
               alt=""
               className="w-[300px] h-[300px] md:w-[500px] md:h-[300px] border-2 border-white rounded-lg mt-10"
             />
@@ -84,7 +84,7 @@ export default function About() {
               Our Initiatives
             </h2>
             <img
-              src=""
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREDvtiy5kzd-_OHoJ4CdgJWBrCquTS54JiPo1puY8qXv0GKgwWVoQaMjFRm4-IkxxY44M&usqp=CAU"
               alt=""
               className="w-[300px] h-[300px] md:w-[500px] md:h-[300px] border-2 border-white rounded-lg mt-10"
             />

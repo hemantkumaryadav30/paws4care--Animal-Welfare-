@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import "./Page.css";
+import paws47 from "../assets/paws47.jpg"
 export default function Animals() {
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -19,12 +20,12 @@ export default function Animals() {
       {/* second section     */}
 
       <div className="w-auto py-11 h-auto ">
-        <div className="w-[300px] md:w-[1140px] md:flex items-center h-auto  mx-auto">
+        <div className="w-[300px] md:w-[1140px] space-y-8 md:space-y-0 md:flex items-center h-auto  mx-auto">
           <div className="w-[300px] h-auto md:w-[500px] mx-auto">
             <img
-              src=""
+              src={paws47}
               alt=""
-              className="w-[300px] h-[300px] mx-auto md:w-[500px] md:h-[500px] border-2 border-black rounded-lg"
+              className="w-[300px] h-[300px] mx-auto md:w-[500px] md:h-[500px] border-2 object-contain bg-black  border-black rounded-lg"
             />
           </div>
 
@@ -45,7 +46,7 @@ export default function Animals() {
               Animal welfare refers to the ethical and compassionate treatment
               of animals, ensuring their physical and mental well-being is
               safeguarded and respected. It encompasses various aspects of
-              animals' lives, including their housing, nutrition, health care,
+              animals lives, including their housing, nutrition, health care,
               social interactions, and overall quality of life.
             </p>
             <p></p>
@@ -54,28 +55,29 @@ export default function Animals() {
       </div>
 
       {/* third section */}
-      <div className="w-auto h-auto  py-11  ">
+      <div className="w-auto h-auto  pb-11  ">
         <div className="w-[300px] md:w-[1140px]   h-auto mx-auto">
           <h3
             className="text-[2rem] md:text-[3rem] text-center font-semibold"
             style={{ fontFamily: "'manrope', sans-serif" }}
           >
-            Here are key components and principles of animal welfare:
+            Here are key components and principles <br/> of animal welfare
           </h3>
           <div className="w-[300px] h-auto mx-auto bg-[#0c051c] rounded-lg shadow-md shadow-violet-600 p-10 md:w-[1140px] mt-10 grid grid-cols-1 md:grid-cols-2 gap-10 bg-[]">
             {/* first card */}
-            <div className="w-[300px] md:w-auto md:flex gap-5 h-auto mx-auto">
-              <div>
+            <div className="w-auto md:w-auto space-y-4 md:space-y-0 md:flex gap-5 h-auto mx-auto">
+              <div className="md:flex-1 ">
                 <img
-                  src=""
+                  src="https://petstayadvisor.com.au/uploads/media/dog-cat-healthy.jpg"
                   alt=""
-                  className="w-[100px] h-[100px] md:w-[200px] md:h-[200px] mx-auto border-2 border-black rounded-lg "
+                  className="w-[200px] h-[200px]  md:w-[200px] md:h-[200px] mx-auto border-2 border-black rounded-lg"
                 />
               </div>
-              <div>
+              <div className="md:flex-1 space-y-6 md:space-y-0 ">
                 <h2 className="text-[1.2rem] font-semibold text-white">
-                  Physical Health
+                ✅ Physical Health
                 </h2>
+                <hr />
                 <p className="text-white text-justify">
                   {" "}
                   Animal welfare involves providing animals with appropriate
@@ -89,18 +91,19 @@ export default function Animals() {
 
             {/* second card */}
 
-            <div className="w-[300px] md:w-auto md:flex gap-5 h-auto mx-auto">
-              <div>
+            <div className="w-auto md:w-auto space-y-4 md:space-y-0 md:flex gap-5 h-auto mx-auto">
+              <div className="md:flex-1">
                 <img
-                  src=""
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSahoxIFwmtKmyjgrEAaWgq-INB-4one_PU_ZE4KqNGemU-9pDSUXgIR2n0JWi85Tdu45o&usqp=CAU"
                   alt=""
-                  className="w-[100px] h-[100px] md:w-[200px] md:h-[200px] mx-auto border-2 border-black rounded-lg "
+                  className="w-[200px] h-[200px] md:w-[200px] md:h-[200px] mx-auto border-2 border-black rounded-lg "
                 />
               </div>
-              <div>
+              <div className="md:flex-1 space-y-6 md:space-y-0">
                 <h2 className="text-[1.2rem] font-semibold text-white">
-                  Behavioral Well-being
+                ✅ Behavioral Well-being
                 </h2>
+                <hr />
                 <p className="text-white text-justify">
                   {" "}
                   Animals have natural behaviors and instincts that should be
@@ -114,18 +117,19 @@ export default function Animals() {
 
             {/* third card */}
 
-            <div className="w-[300px] md:w-auto md:flex gap-5 h-auto mx-auto">
-              <div>
+            <div className="w-auto md:w-auto space-y-4 md:space-y-0 md:flex gap-5 h-auto mx-auto">
+              <div className="md:flex-1">
                 <img
-                  src=""
+                  src="https://lh7-us.googleusercontent.com/fDYNhA7IKOh2j9vWBn_DUMhUdGyCHxYsq55D8ST-O-DalZUtTCCQWxYyjiM1VP67k-8vXxw3ITWV_yZdUHetlYYbyOrANtKpgF8HDA3cu_ZleW6z2v5kymrqRTB3CeTSyu5wLDeFEHVmSZGyzGmUNwo"
                   alt=""
-                  className="w-[100px] h-[100px] md:w-[200px] md:h-[200px] mx-auto border-2 border-black rounded-lg "
+                  className="w-[200px] h-[200px] md:w-[200px] md:h-[200px] mx-auto border-2 border-black rounded-lg "
                 />
               </div>
-              <div>
+              <div className="md:flex-1 space-y-6 md:space-y-0">
                 <h2 className="text-[1.2rem] font-semibold text-white">
-                  Housing and Environment
+                ✅  Housing and Environment
                 </h2>
+                <hr />
                 <p className="text-white text-justify">
                   {" "}
                   Animals should be housed in environments that meet their
@@ -139,18 +143,19 @@ export default function Animals() {
 
             {/* fourth card */}
 
-            <div className="w-[300px] md:w-auto md:flex gap-5 h-auto mx-auto">
-              <div>
+            <div className="w-auto md:w-auto space-y-4 md:space-y-0 md:flex gap-5 h-auto mx-auto">
+              <div className="md:flex-1">
                 <img
-                  src=""
+                  src="https://imgb.srgcdn.com/421d191c-94ae-4285-a352-ec52fa31be88.jpg"
                   alt=""
-                  className="w-[100px] h-[100px] md:w-[200px] md:h-[200px] mx-auto border-2 border-black rounded-lg "
+                  className="w-[200px] h-[200px] md:w-[200px] md:h-[200px] mx-auto border-2 border-black rounded-lg "
                 />
               </div>
-              <div>
+              <div className="md:flex-1 space-y-6 md:space-y-0">
                 <h2 className="text-[1.2rem] font-semibold text-white">
-                  Freedom from Pain and Distress
+                ✅  Freedom from Pain and Distress
                 </h2>
+                <hr />
                 <p className="text-white text-justify">
                   {" "}
                   Animal welfare advocates for the prevention and alleviation of

@@ -4,6 +4,7 @@ import pawslogo from "../assets/paws4carelogo.png";
 import { useState } from "react";
 import Toggle from "./Toggle";
 import { Link } from "react-router-dom";
+
 export default function Navbar() {
     const [toggle, setToggle] =  useState(false);
     const [popup, setPopup] = useState(false);
@@ -24,13 +25,22 @@ export default function Navbar() {
 
         {/* topbar */}
         <div className="w-full h-10 bg-[#0c051c] flex items-center">
-            <ul className="flex w-[200px] mx-auto items-center justify-between ">
+            <div className="md:flex-1 pl-10 md:flex  w-[500px] mx-auto hidden">
+     <marquee className="text-white ">
+     ✨"Pet owners, please 🙏 remember to leash your pets, clean up after them, and be mindful of noise to ensure a harmonious community."
+            </marquee>
+            </div>
+           <div className="w-[500px] mx-auto flex-1">
+
+        
+            <ul className="w-[200px] flex mx-auto  md:float-end md:pr-10 items-center justify-between ">
                 
-                <li><FaFacebook className="text-white text-[1.7rem]"/></li>  
-                <li><FaInstagram className="text-white text-[1.7rem]"/></li>  
-                <li><FaTwitter className="text-white text-[1.7rem]"/></li>
-                <li><FaLinkedin className="text-white text-[1.7rem]"/></li>
+                <li className="border-2 border-white p-1 rounded-lg"><FaFacebook className="text-white text-[1.3rem]"/></li>  
+                <li className="border-2 border-white p-1 rounded-lg"><FaInstagram className="text-white text-[1.3rem]"/></li>  
+                <li className="border-2 border-white p-1 rounded-lg"><FaTwitter className="text-white text-[1.3rem]"/></li>
+                <li className="border-2 border-white p-1 rounded-lg"><FaLinkedin className="text-white text-[1.3rem]"/></li>
             </ul>
+            </div>
         </div>
 
 
@@ -41,7 +51,7 @@ export default function Navbar() {
             <img src={pawslogo} alt="" className="w-[10rem]" />
 
             <ul className="hidden md:flex md:gap-8">
-            <Link to="/">  <li className="text-[1rem] hover:scale-105 transition-transform hover:text-violet-700 font-semibold text-violet-900" style={{fontFamily:"'manrope', sans-serif"}}>Home</li></Link>  
+            <Link to="/">  <li className="menu text-[1rem] hover:scale-105 transition-transform hover:text-violet-700 font-semibold text-violet-900" style={{fontFamily:"'manrope', sans-serif"}}>Home</li></Link>  
              <Link to="/animal-care">  <li className="text-[1rem] transition-transform hover:scale-105 hover:text-violet-700 font-semibold text-violet-900" style={{fontFamily:"'manrope', sans-serif"}}>Animal Welfare</li></Link> 
               <Link to="/about-us">  <li className="text-[1rem] transition-transform hover:scale-105 hover:text-violet-700 font-semibold text-violet-900" style={{fontFamily:"'manrope', sans-serif"}}>About Us</li> </Link>
              <Link to="/contact-us">  <li className="text-[1rem] transition-transform hover:scale-105 hover:text-violet-700 font-semibold text-violet-900" style={{fontFamily:"'manrope', sans-serif"}}>Contact Us</li></Link> 
@@ -61,10 +71,10 @@ export default function Navbar() {
         <div className="w-[100%] h-[100vh] bg-[rgba(0,0,0,0.75)] absolute flex justify-center items-center top-0 z-50" onClick={onClose}>
               <div className="w-[300px] h-auto md:w-[800px] py-11 md:h-[400px] bg-violet-100 rounded-lg">
                  <div className="w-[300px] mx-auto">
-                    <img src="" alt="" className="w-[200px] h-[200px] border-2 rounded-lg border-black mx-auto" />
+                    <img src="https://images.squarespace-cdn.com/content/v1/536fe0f6e4b08758c320b79a/2f6c2449-24ae-44e1-bb30-c3337bb5d68a/Pick+a+Project+Icons+%284%29.jpg" alt="" className="w-[200px] h-[200px] border-2 rounded-lg border-black mx-auto" />
 
                     <div className="w-[200px] mx-auto my-10">
-                        <button className="w-[200px] h-14 rounded-lg bg-[#0c051c] text-white hover:scale-105 transition-transform ">Donate Now</button>
+                     <a href="https://api-wa.co/5dyaTV"> <button className="w-[200px] h-14 rounded-lg bg-[#0c051c] text-white hover:scale-105 transition-transform ">Donate Now</button>  </a> 
 
                     </div>
 

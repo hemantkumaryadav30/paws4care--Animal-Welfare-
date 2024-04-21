@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 export default function Footer() {
   return (
     <div className="w-auto h-auto  md:pb-2 bg-[#0c051c]">
-         <div className="w-[300px]   md:flex items-center justify-between mx-auto py-14 md:w-[1140px]">
+         <div className="w-[80%]  space-y-16 md:space-y-0   md:flex items-center justify-between mx-auto py-14 ">
 
          <div className="w-[300px] border-l-8 border-b-violet-500 pl-3 md:w-[800px] space-y-2 mx-auto ">
         <h3 className="text-white text-[1.5rem]  md:text-[2.5rem] font-semibold " style={{fontFamily:"'manrope', sans-serif"}}>
@@ -15,15 +15,15 @@ export default function Footer() {
         </div>
 
         <div className="w-[200px] mx-auto ">
-         <button className="w-[200px] h-12 bg-violet-400 rounded-lg text-white">Join Today!</button>
+        <a href="https://api-wa.co/5dyaTV"> <button className="w-[200px] h-12 bg-violet-400 rounded-lg hover:scale-105 transition-transform text-white">Join Today!</button> </a>
 
         </div>
       </div>
 <hr className="hidden md:block" />
-        <div className="w-[300px] md:mt-14 h-auto md:flex md:justify-between md:w-[1140px] mx-auto">
+        <div className="w-[80%] md:mt-14 h-auto md:flex md:justify-between  mx-auto">
 
             <div className=" ">
-               <img src={footerlogo} alt="" className="md:w-[300px] drop-shadow-lg shadow-black border-2 border-white bg-white rounded-lg p-2" />
+               <img src={footerlogo} alt="" className="md:w-[300px]  drop-shadow-lg shadow-black border-2 border-white bg-white rounded-md p-2" />
 
             </div>
             <div className="my-4">
@@ -56,12 +56,12 @@ export default function Footer() {
            
 
         </div>
-        <div className="w-[300px] md:w-[700px] my-3 mx-auto">
+        <div className="w-[300px] md:w-[500px] my-3 mx-auto">
          <ul className="flex flex-wrap md:justify-between gap-4">
-            <li className="text-white font-semibold border p-2  rounded-lg md:border-t-0 md:border-l-0 md:border-r-0">Terms & Conditions</li>
-            <li className="text-white font-semibold border p-2  rounded-lg md:border-t-0 md:border-l-0 md:border-r-0">Privacy Policy</li>
-            <li className="text-white font-semibold border p-2  rounded-lg md:border-t-0 md:border-l-0 md:border-r-0">Cookies Policy</li>
-            <li className="text-white font-semibold border p-2  rounded-lg md:border-t-0 md:border-l-0 md:border-r-0">Refund Policy</li>
+          <Link to="/terms&conditions" > <li className="text-white font-semibold text-sm  p-2 ">Terms & Conditions</li></Link>
+          <Link to="/cookies-policy">  <li className="text-white font-semibold text-sm p-2 ">Cookies Policy</li> </Link> 
+          <Link to="/privacy-policy"> <li className="text-white font-semibold text-sm p-2 "> Privacy Policy</li> </Link> 
+          
          </ul>
         </div>
  
